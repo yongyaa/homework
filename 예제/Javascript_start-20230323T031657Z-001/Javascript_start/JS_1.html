@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-1</title>
+    <script>
+        // 내부스크립트
+        // var 그릇 //빈 저장소
+        // var 그릇 = 쌀밥 //데이터 대입-그릇에 쌀밥이 들어감
+        // var 그릇 = 콩밥 //데이터 변경
+        //객체.속성
+        //객체.메소드() [괄호 유무로 속성과 메소드를 구분한다.]
+        // var box1 = 10 //대입
+        // window.alert(box1) //출력
+        var box1 //변수생성
+        var box2 = 1 //생성, 대입 동시에 입력
+        console.log(box1) //undefined
+        box1 = 10
+        box2 = box1 //우측의 값을 좌측에 대입한다.
+        console.log(box1) //10(위치에 따라 다르게 인식한다.)
+        box1 = 20
+        console.log(box1) //20
+        console.log(box1, box2)
+
+        console.log(typeof box1)//number라고 나온다
+        console.log(typeof box2)//number라고 나온다
+        
+        var box3 = 'A'//문자는 따옴표로 묶어야지 나온다
+        console.log(typeof box3)//string라고 나온다
+        console.log(typeof box1+1)//number1라고 나온다(20+1)
+        console.log(typeof box3+1)//string1라고 나온다('a'+1)
+        var box4 = '아이디를 입력하세요'
+        console.log(box4.length)//글자수확인-공백포함
+
+        var a = 1
+        var b = a
+        var c = a + b + c //오른쪽부터 읽기 때문에 c는 (NaN-숫자가 아니라서 계산 할 수 없다 )undefined로 뜨게 된다.//1,1,NaN(Not a Number)
+        console.log(a, b, c)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
